@@ -1,0 +1,215 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Forum", serif;
+}
+
+.hero {
+    background-color: #e9a7df;
+    /* 90% of the viewport height */
+    min-height: 90vh;
+    color: white;
+    display: inline-block;
+}
+
+.navbar {
+    /* puts everything in a row */
+    display: flex;
+    /* pushes items to left, right, and middle */
+    justify-content: space-between;
+    /* align things vertically */
+    align-items: center;
+    color: white;
+    padding: 24px 32px;
+}
+
+.navbar .links a {
+    color: white;
+    text-decoration: none;
+    /* add space between blog link and speaking events link */
+    margin-right: 16px;
+    font-size: 1.2rem;
+}
+.navbar p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar .contact {
+    background-color: white;
+    color: #f088e0;
+    padding: 16px 24px;
+    text-decoration: none;
+}
+
+.navbar .contact:hover {
+    opacity: 0.8;
+}
+
+.herocontent {
+    /* add padding to the left and right  */
+    padding: 0 15%;
+}
+
+.tagline {
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    /* add more space to the top and bottom  */
+    padding: 32px 0;
+}
+
+.twocolumn {
+    font-size: 1.5rem;
+}
+
+.twocolumn > p {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.twocolumn .skills {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0;
+    list-style: none;
+}
+
+.twocolumn .skills li {
+    width: 50%;
+    float: left;
+    margin: 8px 0;
+}
+
+.blogsection {
+ 
+    padding: 64px 0;
+}
+
+.blogcontent {
+
+    padding: 0 15%;
+
+}
+
+.twocolumn .blogposts {
+    width: 50%;
+    float: left;
+}
+
+.blogheading {
+    font-size: 1.5rem;
+}
+
+.blogtext {
+    font-size: 1rem;
+}
+
+.blogposts {
+    margin-top: 24px;
+}
+.blogposts .blogdate {
+    font-size: 0.9rem;
+    color: grey;
+    margin-bottom: 32px;
+}
+
+.blogposts p {
+    margin: 8px 0;
+}
+
+.eventsection {
+    background-color: #fdf0e6;
+    padding: 64px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.eventcontent {
+    padding: 0 15%;
+}
+
+.eventcard {
+    width: 50%;
+    float: left;
+    margin-top: 24px;
+}
+
+.eventtitle {
+    font-size: 1.5rem;
+}
+
+.eventlocation {
+    font-size: 1rem;
+}
+
+.eventcard .eventdate {
+    font-size: 0.9rem;
+    color: grey;
+    margin-bottom: 32px;
+}
+
+.eventcard p {
+    margin: 8px 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 60px;
+
+}
+
+.footercontent {
+    text-align: center;
+}
+footer img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 8px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .herocontent, .blogcontent, .eventcontent {
+        padding: 0 5%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .tagline {
+        font-size: 1.8rem;
+    }
+    .twocolumn > p {
+        width: 100%;
+    }
+
+    .twocolumn .skills {
+        width: 100%;
+    }
+
+    .twocolumn .blogposts {
+        width: 100%;
+    }
+
+    .sectionheading {
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    }
+    
+
+
+@media only screen and (max-width: 480px) {
+    .tagline {
+        font-size: 2.2rem;
+        margin: 0;
+    }
+
+    .links {
+        display: none;
+    }
+}
